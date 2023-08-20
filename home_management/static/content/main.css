@@ -93,3 +93,29 @@ body {
 .flex-grow-5{
   flex-grow: 5;
 }
+
+.flex-shrink-0{
+  flex-shrink: 0;
+}
+
+.flex-shrink-1{
+  flex-shrink: 1;
+}
+.flex-shrink-2{
+  flex-shrink: 2;
+}
+.flex-shrink-3{
+  flex-shrink: 3;
+}
+.flex-shrink-4{
+  flex-shrink: 4;
+}
+.flex-shrink-5{
+  flex-shrink: 5;
+}
+
+.flex-centered{
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+}
