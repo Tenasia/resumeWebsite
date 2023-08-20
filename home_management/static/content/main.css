@@ -1,0 +1,95 @@
+
+@font-face {
+  font-family: 'Poppins';
+  /* src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype'); */
+  src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype'),
+       url('fonts/Poppins/Poppins-Black.ttf') format('truetype'),
+       url('fonts/Poppins/Poppins-Blackitalic.ttf') format('truetype'),
+       url('fonts/Poppins/Poppins-Bold.ttf') format('truetype'),
+       url('fonts/Poppins/Poppins-BoldItalic.ttf') format('truetype'),
+       url('fonts/Poppins/Poppins-ExtraBold.ttf') format('truetype'),
+       url('fonts/Poppins/Poppins-ExtraBoldItalic.ttf.') format('truetype'),
+       url('fonts/Poppins/Poppins-ExtraLightItalic.ttf') format('truetype'),
+       url('fonts/Poppins/Poppins-Italic.ttf') format('truetype'),
+       url('fonts/Poppins/Poppins-Light.ttf') format('truetype'),
+       url('fonts/Poppins/Poppins-LightItalic.ttf') format('truetype'),
+       url('fonts/Poppins/Poppins-Medium.ttf') format('truetype'),
+       url('fonts/Poppins/Poppins-MediumItalic.ttf') format('truetype'),
+       url('fonts/Poppins/Poppins-SemiBold.ttf') format('truetype'),
+       url('fonts/Poppins/Poppins-SemiBoldItalic.ttf') format('truetype'),
+       url('fonts/Poppins/Poppins-Thin.ttf') format('truetype'),
+       url('fonts/Poppins/Poppins-ThinItalic.ttf') format('truetype');
+  /* ... other font properties */
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins';
+  font-weight: normal;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  background-color: lightblue;
+  min-width: 200px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.navbar {
+  padding: 10px;
+}
+
+
+.no-padding {
+  padding: 0;
+  margin: 0;
+}
+
+.main-theme-background-color{
+  background-color: #E6E6FA !important;
+}
+
+
+.nav-link-custom {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: #dc3545;
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.flex-grow-1{
+  flex-grow: 1;
+}
+.flex-grow-2{
+  flex-grow: 2;
+}
+.flex-grow-3{
+  flex-grow: 3;
+}
+.flex-grow-4{
+  flex-grow: 4;
+}
+.flex-grow-5{
+  flex-grow: 5;
+}

@@ -1,0 +1,34 @@
+{% extends 'users_base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="row valign-wrapper" style="height: 100vh;">
+    <div class="col s12 m6 offset-m3">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">Login</span>
+                <form method="post">
+                    {% csrf_token %}
+
+                    <div class="input-field">
+                        <input type="text" id="username" name="username" required>
+                        <label for="username">Username</label>
+                    </div>
+                    
+                    <div class="input-field">
+                        <input type="password" id="password" name="password" required>
+                        <label for="password">Password</label>
+                    </div>
+
+                    {% for message in messages %}
+                        <p>{{ message }}</p>
+                    {% endfor %}
+                    <button class="btn waves-effect waves-light" type="submit">Login Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

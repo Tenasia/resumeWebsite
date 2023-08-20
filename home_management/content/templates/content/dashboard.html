@@ -1,0 +1,33 @@
+{% extends 'content_base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+
+{% block content %}
+<div class="row h-100 w-100">
+    <div class="col-md-6 no-padding">
+      <div class="d-flex flex-column h-100">
+        <div class="bg-primary flex-grow-1">
+          <!-- Top section of the first column -->
+          <p>Top Row</p>
+        </div>
+        <div class="bg-success flex-grow-5">
+          <!-- Bottom section of the first column -->
+          <p>Bottom Row</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 no-padding">
+      <div class="d-flex flex-column h-100">
+        <div class="bg-info flex-grow-1">
+            <!-- Top section of the second column -->
+            <p>Top Row</p>
+          </div>
+          <div class="bg-warning flex-grow-1">
+            <!-- Bottom section of the second column -->
+            <p>Bottom Row</p>
+          </div>
+      </div>
+    </div>
+</div>
+{% endblock %}

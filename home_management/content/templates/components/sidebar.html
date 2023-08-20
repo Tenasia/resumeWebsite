@@ -1,0 +1,36 @@
+{% load static %}
+
+<nav class="col-lg-2 col-sm-3 d-none d-sm-block no-padding main-theme-background-color">
+  
+  <div class="sidebar-sticky">
+    
+    <!-- Container for Image -->
+    <div class="image-container">
+      <img src="{% static 'content/images/HuTao.jpg' %}" alt="Your Image" class="img-fluid">
+    </div>
+    
+    <!-- Navigation List -->
+    {% with request.resolver_match.url_name as url_name %}
+    <ul class="nav flex-column">
+      <li class="nav-item {% if url_name == 'dashboard' %}active{% endif %}">
+        <a href="{% url 'content:dashboard' %}" class="nav-link-custom">
+          <img src="{% static 'content/icons/dashboard.svg' %}" alt="Your Icon" width="32" height="32">
+          Dashboard
+        </a>
+      </li>
+      {% comment %} <li class="nav-item">
+        <a href="#" class="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Services</a>
+      </li>
+      <li class="nav-item">
+        <a href="{% url 'users:logout' %}" class="nav-link">Logout</a>
+      </li> {% endcomment %}
+    </ul>
+    {% endwith %}
+  </div>
+</nav>
+
+
+
